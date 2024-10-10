@@ -17,7 +17,7 @@ class SampleappApplicationTests(@Autowired private val restTemplate: TestRestTem
 
     @Test
     fun findAll() {
-        val content = """["item1","item2"]"""
+        val content = """["item1","item2","item3"]"""
         assertEquals(content, restTemplate.getForObject<String>("/items"))
     }
 }
